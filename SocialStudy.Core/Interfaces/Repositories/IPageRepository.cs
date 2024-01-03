@@ -7,7 +7,7 @@ public interface IPageRepository
   Task<int> AddPage(Page page);
   Task<Page> PageInfo(int pageId);
   Task<IEnumerable<Page>> PageInfoList(int amount);
-  Task<IEnumerable<Page>> PageInfoList(IEnumerable<int> pageIdList);
+  Task<IEnumerable<Page>> PageInfoList(List<int> pageIdList);
   Task<bool> EnablePage(int pageId);
   Task<bool> DisablePage(int pageId);
   Task<bool> UpdatePage(Page page);
