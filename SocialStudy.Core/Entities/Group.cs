@@ -7,6 +7,7 @@ public class Group
   public bool Status { get; set; }
   public DateTime Created { get; set; }
   public DateTime Updated { get; set; }
+#nullable enable
   public List<Account>? Accounts { get; set; }
   public List<Page>? Pages { get; set; }
 
